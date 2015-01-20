@@ -3,6 +3,7 @@
 Gem::Specification.new do |s|
   s.name        = "urlcrypt"
   s.version     = "0.1.1"
+  s.authors     = "Thomas Fuchs, Samuel Tesla"
   s.summary     = %q{encrypts strings in URL-friendly format}
 
   s.files         = `git ls-files`.split("\n")
