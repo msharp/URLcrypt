@@ -1,12 +1,13 @@
 # URLcrypt
 
-[![Build Status](https://travis-ci.org/cheerful/URLcrypt.png?branch=master)](https://travis-ci.org/cheerful/URLcrypt)
-[![Coverage Status](https://coveralls.io/repos/cheerful/URLcrypt/badge.png?branch=master)](https://coveralls.io/r/cheerful/URLcrypt)
-
 Ever wanted to securely transmit (not too long) pieces of arbitrary binary data
 in a URL? **URLcrypt** makes it easy!
 
 This gem is based on the [base32](https://github.com/stesla/base32) gem from Samuel Tesla.
+
+It was adapted by [Tomas Fuchs](https://github.com/madrobby).
+
+This fork makes some minor changes so that it works on Heroku.
 
 URLcrypt uses **256-bit AES symmetric encryption**
 to securely encrypt data, and encodes and decodes 
@@ -36,7 +37,11 @@ Patches are welcome; please include tests!
 
 ## Installation
 
-Add `urlcrypt` to your Gemfile.
+Add the following to your Gemfile.
+
+```ruby
+gem 'urlcrypt', github: 'msharp/URLcrypt'
+```
 
 ## Example
 
